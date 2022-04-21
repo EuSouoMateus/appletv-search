@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* font-family: 'Inter', sans-serif; */
+
+body {
+    background-color: #C4C4C4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-main h1 {
+    font-size: 8rem;
+    font-family: 'Inter', sans-serif;
+    padding-left: 30px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo-title img {
+    height: 100px;
+}
+
+
+.form-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#query, #storefront, h1 {
+    padding: 10px 50px;
+}
+
+.submit {
+    padding: 10px 30px;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+    text-align: center;
+    max-width: 1280px;
+}
+
+#results h2 {
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.movie-result {
+    display: flex;
+    flex-direction: column;
+    width: 413.33px;
+}
+
+.movie-result h1 {
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.movie-result img {
+	padding: 0;
+	height: 225px;
+	width: 400px;
+	object-fit: contain;
+	border: 1px solid #333;
+	border-radius: 20px; 
+	margin: 0;
+	display: inline;
+    transition: transform 0.5s;
+}
+
+.movie-result img:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+.title-year {
+    height: 60px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    margin: 3px;
+}
+
+.title-year::-webkit-scrollbar {
+    display: none;
+}

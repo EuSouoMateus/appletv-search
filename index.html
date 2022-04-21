@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple TV Shows & Movies Search</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-title">
+            <img src="assets/apple_logo_black.svg" alt="Apple Logo Black">
+            <div class="title-main">
+                <h1>Search</h1>
+            </div>
+        </div>
+        <div class="form-search" id="form-search">
+            <form action="" method="get" accept-charset="utf-8" id="AppleTVSearch">
+                <input type="text" class="text" name="query" id="query" placeholder="Movie title" required="">
+                <select name="storefront" id="storefront">
+                    <option value="143503">Brazil</option>
+                    <option value="143441">United States of America</option>
+                    <option value="143444">United Kingdom</option>
+                </select>
+                <input type="submit" class="submit" value="Search">
+            </form>
+        </div>
+        <div id="results"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
