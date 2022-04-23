@@ -36,6 +36,7 @@ input {
 
 .logo-title img {
     height: 100px;
+    animation: float-logo 3s ease-in-out infinite;
 }
 
 .form-search {
@@ -128,4 +129,16 @@ input {
 
 .footer:hover {
     opacity: 1;
+}
+
+@keyframes float-logo {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    } 
+    100% {
+        transform: translate(0);
+    } 
 }
