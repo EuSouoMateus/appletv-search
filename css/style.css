@@ -62,10 +62,10 @@ input {
     max-width: 1280px;
 }
 
-#results h2 {
-    font-size: 1.2rem;
-    font-family: 'Inter', sans-serif;
-}
+			 
+					  
+									 
+ 
 
 .movie-result {
     display: flex;
@@ -73,9 +73,14 @@ input {
     width: 413.33px;
 }
 
-.movie-result h1 {
+.movie-result h1, h2 {
     font-size: 1.2rem;
     font-family: 'Inter', sans-serif;
+}
+
+.movie-result h2 {
+    transition: transform 0.5s;
+    cursor: pointer;
 }
 
 .movie-result img {
@@ -91,9 +96,15 @@ input {
 }
 
 .movie-result img:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.1); 
+    -ms-transform: scale(1.08); /* IE 9 */
+    -webkit-transform: scale(1.08); /* Safari 3-8 */
+    transform: scale(1.08); 
+}
+
+.movie-result h2:hover {
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
 }
 
 .title-year {
