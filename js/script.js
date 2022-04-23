@@ -21,7 +21,7 @@ window.addEventListener("load", function() {
     };
 
     const api_itunes = "https://uts-api.itunes.apple.com/uts/v2/search/incremental?";
-    const locale = "pt-BR" // window.navigator.userLanguage || window.navigator.language;
+    const locale = navigator.language || navigator.userLanguage;
     const form = document.getElementById("AppleTVSearch");
 
     function renderResult(data={}){
