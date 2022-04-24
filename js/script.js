@@ -16,6 +16,11 @@ String.prototype.format = function(args) {
 
 function copyClipboard(target) {
     navigator.clipboard.writeText(target.innerHTML);
+    let text = target.textContent
+    target.textContent = 'Copied!'
+    setTimeout(function() {
+        target.textContent = text
+    }, 500)
 }
 
 window.addEventListener("load", function() {
@@ -48,7 +53,6 @@ window.addEventListener("load", function() {
         }
 
         div_results.innerHTML = "";
-        let html = makeHTML();
         let shelves = data.canvas.shelves[0].title.toLowerCase() === 'filmes' ? data.canvas.shelves[0] : data.canvas.shelves[1];
         shelves.items.forEach(result => {
             let releaseYear = new Date(result.releaseDate).getFullYear();
@@ -56,7 +60,7 @@ window.addEventListener("load", function() {
             let image_url = result.images.coverArt16X9.url.format(
                 {'w': '1920', 'h': '1080', 'f': 'jpg'}
             );
-            div_results.innerHTML += html.format({'href': result.url, 'src': image_url, 'id': result.id, 'title': result.title, 'year': releaseYear});
+            div_results.innerHTML += makeHTML().format({'href': result.url, 'src': image_url, 'id': result.id, 'title': result.title, 'year': releaseYear});
         });
     }
 
