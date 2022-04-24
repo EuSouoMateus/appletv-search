@@ -49,6 +49,10 @@ input {
     padding: 10px 50px;
 }
 
+#content-type {
+    padding: 10px 70px;
+}
+
 .submit {
     padding: 10px 30px;
 }
