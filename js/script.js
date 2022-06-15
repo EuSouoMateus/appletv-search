@@ -38,8 +38,8 @@ class Client {
             sf: this.storefront,
             locale: this.LanguageLocale,
             caller: 'wta',
-            utsk: '6e3013c6d6fae3c2::::::235656c069bb0efb',
-            v: '56',
+            utsk: '6e3013c6d6fae3c2::::::09ca1e325e2be8ff',
+            v: '58',
             pfm: 'web',
             q: this.query
         }));
