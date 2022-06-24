@@ -40,7 +40,7 @@ class Client {
             caller: 'wta',
             utsk: '6e3013c6d6fae3c2::::::09ca1e325e2be8ff',
             v: '58',
-            pfm: 'web',
+            pfm: 'desktop',
             q: this.query
         }));
         return await response.json();
